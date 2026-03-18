@@ -27,7 +27,7 @@ echo "===== INFORMATIONS SYSTEME =====" >> "$rapport"
 # afficher les infos système
 uname -a >> "$rapport"
 
-echo "" >> "$rapport
+echo "" >> "$rapport"
 
 # =====================================================
 # 2. SAUVEGARDES REALISEES
@@ -36,7 +36,7 @@ echo "" >> "$rapport
 echo "===== SAUVEGARDES REALISEES =====" >> "$rapport"
 
 # vérifier si le fichier backup.log existe
-if [ -f logs/backup.log ]
+if test -f logs/backup.log 
 then
 
 # afficher le contenu    	
@@ -56,7 +56,7 @@ echo "" >> "$rapport"
 echo "===== NETTOYAGE =====" >> "$rapport"
 
 # vérifier si le fichier cleanup.log existe
-if [ -f logs/cleanup.log ]
+if test -f logs/cleanup.log 
 then
 
 # récupérer le nombre total de fichiers supprimés    
