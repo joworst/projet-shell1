@@ -19,3 +19,21 @@ show_ram() {
 echo "Mémoire RAM :"
 free -h
 }
+show_disk() {
+echo "Espace disque :"
+df -h
+}
+
+show_ip() {
+echo "Adresse IP :"
+hostname -I
+}
+
+echo "===== INVENTORY ====="
+
+show_os
+show_kernel
+show_cpu
+show_ram
+show_disk
+show_ip
